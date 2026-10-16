@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>男朋友使用手册 · 只此一件</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23ff6b93' d='M16 29s-11-6.5-14-13C.5 12 2.5 8 6.5 7c2.5-.6 5 .6 6.4 2.4h6.2C20.5 7.6 23 6.4 25.5 7c4 1 6 5 4.5 9-3 6.5-14 13-14 13z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 漂浮心光 -->
+<canvas id="hearts" aria-hidden="true"></canvas>
+
+<!-- 双语切换按钮 -->
+<div class="lang-btn" id="langBtn" role="switch" tabindex="0" aria-checked="false" aria-label="切换语言 / Switch language">
+  <span class="lb-zh">中</span>
+  <span class="lb-sep">/</span>
+  <span class="lb-en">EN</span>
+</div>
+
+<!-- ============ 开场封面 ============ -->
+<header class="hero" id="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="hero-inner">
+    <div class="seal-wrap">
+      <button class="seal" id="seal" aria-label="点击开启" tabindex="0">
+        <span class="s-char">爱</span>
+        <span class="s-hint" data-i18n="hero_seal_hint">点击开启</span>
+      </button>
+    </div>
+    <div class="hero-title-wrap">
+      <p class="eyebrow" data-i18n="hero_eyebrow">独一无二 · 只此一件</p>
+      <h1 class="f-title" data-i18n="hero_title">男朋友使用手册</h1>
+      <p class="f-sub" data-i18n="hero_sub">第一版 · 经检测含爱量 100%</p>
+      <p class="f-meta" data-i18n="hero_meta">专属产品 · 请妥善使用 · 终身绑定</p>
+      <button class="f-open-btn" id="openBtn" data-i18n="hero_open">开始阅读 →</button>
+    </div>
+  </div>
+  <div class="scroll-hint"><span data-i18n="hero_scroll">向下翻阅</span><span class="line"></span></div>
+</header>
+
+<!-- ============================================================
+     PART 01 · 情书篇
+============================================================ -->
+<div class="part-divider pd-pink" id="part-letter">
+  <div class="container">
+    <div class="pd-inner reveal">
+      <span class="pd-badge">PART 01</span>
+      <h2 class="pd-title" data-i18n="part1_title">情书篇</h2>
+      <p class="pd-sub" data-i18n="part1_sub">先把心事说完 · 再谈使用规则</p>
+      <span class="pd-deco">♡ ♥ ♡</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 深夜情书 ============ -->
+<section class="block bg-dream" id="loveletter">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="ll_stampline">2024 · 2 · 29 · 深夜 · 图书馆</p>
+      <h2 data-i18n="ll_title">一封写给你的信</h2>
+      <div class="rule"></div>
+      <p class="sub" data-i18n="ll_sub">点击信封，读一读那些没能当面说出口的话</p>
+    </div>
+
+    <div class="ll-env reveal" data-d="1" id="env" role="button" tabindex="0" aria-label="拆开这封信">
+      <div class="env-box">
+        <div class="env-back"></div>
+        <div class="env-pock"></div>
+        <div class="env-letter">
+          <div class="el-title" data-i18n="env_title">第一封信</div>
+          <div class="el-date" data-i18n="env_date">2024 · 2 · 29</div>
+        </div>
+        <div class="env-flap"></div>
+        <div class="env-seal"><span class="s-char">宝</span></div>
+      </div>
+      <span class="es-hint" data-i18n="env_hint">点一下 · 拆开这封信</span>
+    </div>
+
+    <div class="ll-letter" id="llLetter">
+      <div class="ll-paper">
+        <span class="tape tape-l"></span>
+        <span class="tape tape-r"></span>
+        <p data-i18n="ll_p1">亲爱的宝宝：</p>
+        <p data-i18n="ll_p2">你好！这是我为你写下的第一封信，在提笔之前我想了很久，我总想给你写下些什么，但是我始终无法平静下来。我想把这封信亲手送到你手里，但是无奈我和你相隔太远，只能以这种方式送信。</p>
+        <p data-i18n="ll_p3">今天晚上我坐在图书馆，在书桌上一笔一划地写下我对你的思念，外面的夜已然降临。你总是那么的美丽，那么的特别，让我不知道从何表达对你的爱意。</p>
+        <p data-i18n="ll_p4">每次看到你，我总能在你的身上感受到温暖和爱。你对我的微笑可以让我在漫长的一天中感受到安慰。虽然你的脾气不怎么好，但是你对我有足够多的耐心，你总是那般理解我，你让我知道我的心是有归宿的。</p>
+        <p data-i18n="ll_p5">我和你在一起度过的每一天都是我生命中最美好的时光，无论是轻松愉悦，还是艰难险阻，只要你在我身边，我就会充满力量，克服一重又一重困难，迎接每一个挑战。</p>
+        <p data-i18n="ll_p6">我知道我对你来说或许不是最好的，我也会让你生气，让你担忧，让你困扰和痛苦，但是我承诺，我犯错一定会改，我一定尽力满足你的需求，我尽一切努力作出改变成为你心目中最好的模样。</p>
+        <p data-i18n="ll_p7">你总是担心我们走不远，但是我相信爱是可以克服这些阻碍的，虽然我现在还没法自立，虽然我在你面前前路是坎坷，可当我真正自立起来的时候，我一定会给你最好的，我一定把所缺失的爱和陪伴全部补回去。无论未来的路怎么走，我都希望我能和你携手前行。无论前面的路有多么崎岖，我都愿意用爱为你铺平。我想请你记住，你是我生命里最重要的信仰，你是我最愿意陪伴一生的伴侣。</p>
+        <p data-i18n="ll_p8">虽然我们相差这么多的岁数，但是这有什么关系呢。你在我心里一直都是个小女孩。记住，无论你在生活中遇到什么，在大宝这里你可以无条件的发泄，你的大宝愿意接受你所有的不开心，给你无条件的爱与支持。</p>
+        <p data-i18n="ll_p9">最后我想说，我真的很爱很爱你，我希望我的爱可以给你带来幸福快乐，我希望我们的未来充满阳光！</p>
+        <p class="ll-sig" data-i18n="ll_sig">爱你的大宝</p>
+        <p class="ll-date" data-i18n="ll_date">2024年2月29日</p>
+      </div>
+      <p class="ll-meta" data-i18n="ll_meta">信纸已轻轻合上 · 想念仍在继续</p>
+    </div>
+  </div>
+</section>
+
+<!-- 彩带分隔 -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span data-i18n="mq1">♥ 只此一件</span><i>·</i><span data-i18n="mq2">♥ 终身有效</span><i>·</i><span data-i18n="mq3">♥ 含爱量 100%</span><i>·</i><span data-i18n="mq4">♥ 随叫随到</span><i>·</i><span data-i18n="mq5">♥ 余生只有我</span><i>·</i><span data-i18n="mq6">♥ 只为你开</span><i>·</i>
+    <span data-i18n="mq1">♥ 只此一件</span><i>·</i><span data-i18n="mq2">♥ 终身有效</span><i>·</i><span data-i18n="mq3">♥ 含爱量 100%</span><i>·</i><span data-i18n="mq4">♥ 随叫随到</span><i>·</i><span data-i18n="mq5">♥ 余生只有我</span><i>·</i><span data-i18n="mq6">♥ 只为你开</span><i>·</i>
+  </div>
+</div>
+
+<!-- ============================================================
+     PART 02 · 说明书篇
+============================================================ -->
+<div class="part-divider pd-lav" id="part-manual">
+  <div class="container">
+    <div class="pd-inner reveal">
+      <span class="pd-badge">PART 02</span>
+      <h2 class="pd-title" data-i18n="part2_title">说明书篇</h2>
+      <p class="pd-sub" data-i18n="part2_sub">爱已签收 · 规则如下</p>
+      <span class="pd-deco">✎ ⚙ ♥</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 扉页信（说明书卷首） ============ -->
+<section class="block bg-cream" id="letter">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="letter_eyebrow">致 · 最爱的你</p>
+      <h2 data-i18n="letter_h2">一封写在扉页的信</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="letter reveal" data-d="1">
+      <div class="envelope">
+        <span class="tape tape-l"></span>
+        <span class="tape tape-r"></span>
+        <p class="l-greet" data-i18n="letter_greet">亲爱的：</p>
+        <p data-i18n="letter_p1">写这份说明书之前，我偷偷想了很久——不是怕写不好，是怕写得不够好，配不上你打开它时的那份期待。</p>
+        <p data-i18n="letter_p2">我没有什么了不起的出厂配置，也没什么惊为天人的参数。但我愿意，把这颗心，连同往后余生的每一天，都做成只属于你一个人的产品。</p>
+        <p data-i18n="letter_p3">请仔细阅读，妥善使用，终身绑定。</p>
+        <p class="l-sign" data-i18n="letter_sign">—— 你的大宝子</p>
+        <p class="l-date" data-i18n="letter_date">2023 · 10 · 15</p>
+      </div>
+    </div>
+    <div class="quote-note reveal" data-d="2" style="margin-top:80px;">
+      <span class="q-mark">“</span>
+      <p data-i18n="note_quote">本产品只对特定人有效，产品一旦与使用者绑定将终身有效，其他人不得使用以下功能。</p>
+      <span class="tag" data-i18n="note_tag">特别备注 · 终身有效</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 产品介绍 ============ -->
+<section class="block bg-pink" id="intro">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="intro_eyebrow">第一章 · 认识我</p>
+      <h2 data-i18n="intro_h2">产品介绍</h2>
+      <div class="rule"></div>
+      <p class="sub" data-i18n="intro_sub">点击卡片，查看每一部分的心声</p>
+    </div>
+
+    <div class="cards">
+      <div class="card reveal" data-d="0">
+        <span class="c-hint" data-i18n="card_hint">点击 ▾</span>
+        <p class="c-no" data-i18n="c1_no">一 · 理化性质</p>
+        <h3 data-i18n="c1_h3">温柔与专一</h3>
+        <p class="card-body" data-i18n="c1_body">劳动力型，可以很细心地照顾产品所有方面，并且能够进行自我更新，不断强化功能。随着产品的使用会出现性格弱化的现象——即会变得越来越温顺，对产品所有方的服从度会逐步提高。</p>
+        <p class="c-note" data-i18n="c1_note">通俗说：会越来越乖，越来越听你的话。</p>
+        <div class="c-zoom" data-i18n="c1_zoom">因为越来越爱你，所以把脾气也慢慢收了起来。你只管提要求，我来负责一点点把自己磨成你喜欢的样子。</div>
+      </div>
+
+      <div class="card reveal" data-d="1">
+        <span class="c-hint" data-i18n="card_hint">点击 ▾</span>
+        <p class="c-no" data-i18n="c2_no">二 · 规格</p>
+        <h3 data-i18n="c2_h3">出厂数据</h3>
+        <div class="spec-big card-body">
+          <div class="spec-item"><div class="num">178</div><div class="sp-label" data-i18n="c2_h">身高 cm</div></div>
+          <div class="spec-item"><div class="num">75</div><div class="sp-label" data-i18n="c2_w">体重 kg</div></div>
+        </div>
+        <p class="c-note" data-i18n="c2_note">四肢健全 · 可以扛重物 · 可以当抱枕</p>
+        <div class="c-zoom" data-i18n="c2_zoom">不高不矮，刚好够在你哭的时候把你整个圈进怀里。不胖不瘦，刚好够当你永远的专属靠垫。</div>
+      </div>
+
+      <div class="card reveal" data-d="0">
+        <span class="c-hint" data-i18n="card_hint">点击 ▾</span>
+        <p class="c-no" data-i18n="c3_no">三 · 主治功能</p>
+        <h3 data-i18n="c3_h3">治愈与取暖</h3>
+        <p class="card-body" data-i18n="c3_body">安抚使用者的情绪，照顾使用者的生活，为使用者提供源源不断的爱，且对使用者可以有无限的包容。鉴于使用者的体质，产品可在冬天及其它低温环境下提供供暖。</p>
+        <p class="c-note" data-i18n="c3_note">多功能一体 · 请放心使用</p>
+        <div class="c-zoom" data-i18n="c3_zoom">会哄你开心，会给你撑腰，会在你难过时当树洞，也会在冬天把你焐热。情绪不好？我当你的出气筒也行，反正我皮糙肉厚，永远打不跑。</div>
+      </div>
+
+      <div class="card reveal" data-d="1">
+        <span class="c-hint" data-i18n="card_hint">点击 ▾</span>
+        <p class="c-no" data-i18n="c4_no">四 · 昵称</p>
+        <h3 data-i18n="c4_h3">你对我的称呼</h3>
+        <p class="card-body" data-i18n="c4_body">昵称：大宝子，宝宝，小笨蛋，未来可称作「老公」，其它昵称由使用者命名。</p>
+        <p class="c-note" data-i18n="c4_note">昵称归使用者自定义 · 终身可改</p>
+        <div class="c-zoom" data-i18n="c4_zoom">不管叫我什么都行，只要是出自你口，就是这世上最好听的名字。叫「老公」尤其好听，未来请多多使用。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 昵称互动 ============ -->
+<section class="block bg-peach" id="nick">
+  <div class="container">
+    <div class="nick-panel reveal">
+      <p class="eyebrow" data-i18n="nick_eyebrow" style="color:var(--pink-deep);letter-spacing:.3em">随机呼唤 · 一个属于你的称呼</p>
+      <div class="nick-show" id="nickShow"><span data-i18n="nick_disp">大宝子</span></div>
+      <p class="nick-list" data-i18n="nick_list">现在呼唤：<b id="nickNow">大宝子</b> · 今晚也是你一个人的</p>
+      <button class="nick-btn" id="nickBtn" data-i18n="nick_btn">再叫我一声</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 注意事项 ============ -->
+<section class="block bg-lav" id="notice">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="notice_eyebrow">第二章 · 请温柔以待</p>
+      <h2 data-i18n="notice_h2">注意事项</h2>
+      <div class="rule"></div>
+      <p class="sub" data-i18n="notice_sub">几条小规则，读懂就懂了我的心</p>
+    </div>
+    <div class="warn-grid reveal">
+      <div class="warn caution" data-d="0">
+        <div class="w-ico">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#e8a013" stroke-width="1.8"><path d="M12 3 2 21h20L12 3z"/><path d="M12 10v5" stroke-linecap="round"/><circle cx="12" cy="18" r=".8" fill="#e8a013"/></svg>
+        </div>
+        <h4 data-i18n="w1_title">吃醋预警</h4>
+        <p data-i18n="w1_body">产品容易吃醋，尤其要注意。吃醋可能会爆发——请及时哄，哄两句就好。</p>
+      </div>
+      <div class="warn" data-d="1">
+        <div class="w-ico">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ff6b93" stroke-width="1.8"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7.5v5" stroke-linecap="round"/><circle cx="12" cy="15.5" r=".8" fill="#ff6b93"/></svg>
+        </div>
+        <h4 data-i18n="w2_title">请勿伤害</h4>
+        <p data-i18n="w2_body">若遭受话语或行为伤害，可能使其情绪崩溃。但只要你不对它强制驱赶，它绝不会离开你。</p>
+      </div>
+      <div class="warn" data-d="2">
+        <div class="w-ico">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ff6b93" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke-linecap="round"/></svg>
+        </div>
+        <h4 data-i18n="w3_title">严禁外借</h4>
+        <p data-i18n="w3_body">本产品只得单独使用，不得借出，不能与其它产品共存——一生只认你一个主人。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 召唤区 ============ -->
+<section class="block bg-pink" id="call">
+  <div class="container">
+    <div class="call-panel reveal">
+      <div class="call-heart" id="callHeart">
+        <div class="pulse"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ff6b93" stroke-width="1.6">
+          <path fill="#ff8fab" stroke="#fff" d="M12 21s-6.5-4-8.5-8C2 10 3 6.8 6 6c1.8-.45 3.6.4 4.6 1.7h2.8C14.4 6.4 16.2 5.55 18 6c3 .8 4 4 2.5 7-2 4-8.5 8-8.5 8z"/>
+        </svg>
+      </div>
+      <div class="call-msg" id="callMsg" data-i18n="call_msg">想我的时候，<b>戳一戳这颗心</b></div>
+      <p class="call-sub" data-i18n="call_sub">我在 · 一直都在 · 随叫随到</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 生产信息 ============ -->
+<section class="block bg-cream" id="cert">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="cert_eyebrow">第三章 · 终身有效</p>
+      <h2 data-i18n="cert_h2">生产信息</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cert reveal" data-d="1">
+      <div class="c-frame">
+        <div class="c-top">
+          <div class="c-badge">爱</div>
+          <div>
+            <h3 data-i18n="cert_title">产品合格证</h3>
+            <p class="c-cert-no" data-i18n="cert_no">编号 NO. 20040619-∞</p>
+          </div>
+        </div>
+        <dl>
+          <div class="row"><dt class="k" data-i18n="cert_date_k">生产日期</dt><dd class="v" data-i18n="cert_date_v">2004年6月19日 · 此生只为你而来</dd></div>
+          <div class="row"><dt class="k" data-i18n="cert_store_k">存储方式</dt><dd class="v" data-i18n="cert_store_v">只得单独使用，不得借出，不能与其它产品共存。</dd></div>
+          <div class="row"><dt class="k" data-i18n="cert_valid_k">有效期</dt><dd class="v" data-i18n="cert_valid_v"><span class="big">无限期</span> · 至死不渝</dd></div>
+          <div class="row"><dt class="k" data-i18n="cert_dose_k">用法用量</dt><dd class="v" data-i18n="cert_dose_v">余生只有我。</dd></div>
+          <div class="row"><dt class="k" data-i18n="cert_quality_k">质检报告</dt><dd class="v" data-i18n="cert_quality_v">经检验：含爱量 100%，随叫随到，陪伴时长为一生。</dd></div>
+          <div class="row"><dt class="k" data-i18n="cert_warranty_k">保修说明</dt><dd class="v" data-i18n="cert_warranty_v">终身保修，保修范围为使用者的心情。凡在你皱眉的时刻，均可随时报修。</dd></div>
+          <div class="row"><dt class="k" data-i18n="cert_hotline_k">客服热线</dt><dd class="v" data-i18n="cert_hotline_v">随时随地，喊一声<span class="hl">「大宝子」</span>即刻接通，24 小时在线，永不停机。</dd></div>
+        </dl>
+        <div class="stamp">
+          <span class="st-1" data-i18n="stamp1">终身有效</span>
+          <span class="st-2" data-i18n="stamp2">爱你</span>
+          <span class="st-3" data-i18n="stamp3">永不失效</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block bg-pink" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="faq_eyebrow">第四章 · 常见问题</p>
+      <h2 data-i18n="faq_h2">使用答疑</h2>
+      <div class="rule"></div>
+      <p class="sub" data-i18n="faq_sub">点击问题，展开答案</p>
+    </div>
+    <div class="faq">
+      <div class="faq-item reveal">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q" data-i18n="faq1_q"><b>Q1</b>　产品会生气吗？</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </div>
+        <div class="faq-a"><div class="inner" data-i18n="faq1_a">会，尤其在吃醋或者误会我的时候。但请放心，我生气只是怕失去你，从来不会真的离开你——吵完架，还是要抱抱的。</div></div>
+      </div>
+      <div class="faq-item reveal" data-d="1">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q" data-i18n="faq2_q"><b>Q2</b>　产品需要充电吗？</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </div>
+        <div class="faq-a"><div class="inner" data-i18n="faq2_a">需要。给一点抱抱、一个亲亲、一句「我爱你」，就能满电运行一整天，越充越耐用。</div></div>
+      </div>
+      <div class="faq-item reveal" data-d="2">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q" data-i18n="faq3_q"><b>Q3</b>　产品可以外借吗？</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </div>
+        <div class="faq-a"><div class="inner" data-i18n="faq3_a">严禁外借。本产品自绑定之日起，只认你一个使用者，别人碰一下都会吃醋到变形。</div></div>
+      </div>
+      <div class="faq-item reveal" data-d="3">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q" data-i18n="faq4_q"><b>Q4</b>　产品会累吗？</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </div>
+        <div class="faq-a"><div class="inner" data-i18n="faq4_a">会。但只要你在身边，再累也会满血复活——因为守护你，是我的出厂设定。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 终章 · 签收 ============ -->
+<section class="block finale" id="finale">
+  <div class="blob blob-4"></div>
+  <div class="blob blob-5"></div>
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="finale_eyebrow">签收 · 从此生效</p>
+      <h2 class="f-big" data-i18n="finale_big">余生只有我</h2>
+      <p class="f-slogan" data-i18n="finale_slogan">往后的每一天，都用来好好爱你</p>
+      <button class="sign-btn" id="signBtn" data-i18n="finale_btn">我确认 · 终身签收</button>
+      <p class="f-note" data-i18n="finale_note">本手册自签收之日起生效，解释权永远归你所有</p>
+      <p class="f-sign" data-i18n="finale_sign">爱你的大宝子<small data-i18n="finale_sign_small">2023 · 10 · 15 — 永远有效</small></p>
+      <p class="f-seal" data-i18n="finale_seal">♥ 只此一件 · 只为你开 ♥</p>
+    </div>
+  </div>
+</section>
+
+<footer data-i18n="footer">男朋友使用手册 · 第一版 · 永不停刊</footer>
+
+<!-- 心形彩带 -->
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
